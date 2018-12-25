@@ -1,0 +1,63 @@
+unit UOperacoesMat;
+
+interface
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Edit,
+  FMX.Controls.Presentation, FMX.StdCtrls;
+type
+  TOperacoesMat = class
+
+  public
+    bJaPossuiOperador: boolean;
+
+    procedure AcrescentarValores(Valor : double; const edresultado : TEdit);
+    procedure AcrecentarOperacoes(Operacao : string; const edresultado : TEdit);
+    procedure CalcularResultado(edresultado: TEdit);
+  end;
+
+implementation
+
+{ TOperacoesMat }
+
+procedure TOperacoesMat.AcrecentarOperacoes(Operacao: string;
+  const edresultado: TEdit);
+var
+  I : integer;
+  valorExibido : string;
+begin
+  valorExibido := edresultado.Text;
+  if valorExibido = EmptyStr then
+    exit;
+
+  if not bJaPossuiOperador then
+  begin
+    valorExibido := valorExibido + Operacao;
+    bJaPossuiOperador := true;
+  end
+  else
+  begin
+    for I := 0 to Length(valorExibido) do
+    begin
+      if (valorExibido[i] in ['-','/','*','+']) then
+      begin
+        valorExibido[I] := Operacao[1];
+      end
+    end;
+  end;
+
+  edresultado.Text :=  valorExibido;
+end;
+
+procedure TOperacoesMat.AcrescentarValores(Valor: double;
+  const edresultado: TEdit);
+begin
+  edresultado.Text := edresultado.Text +  FloatToStr(Valor);
+end;
+
+procedure TOperacoesMat.CalcularResultado(edresultado: TEdit);
+begin
+
+end;
+
+end.

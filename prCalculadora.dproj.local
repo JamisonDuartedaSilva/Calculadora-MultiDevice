@@ -1,15 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2018/12/25 16:14:27.968,=C:\Users\jamis\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2018/12/25 16:15:04.984,=D:\GitHub\Delphi\Projects\CalculadoraEmDelphi\Calculadora\UFormCalculadora.pas</Transaction>
-    <Transaction>2018/12/25 16:15:17.093,=D:\GitHub\Delphi\Projects\CalculadoraEmDelphi\Calculadora\UOperacoesMatematicas.pas</Transaction>
-    <Transaction>2018/12/25 16:18:00.472,D:\GitHub\Delphi\Projects\CalculadoraMultiDevice\Unit1.fmx=C:\Users\jamis\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
-    <Transaction>2018/12/25 16:18:00.472,D:\GitHub\Delphi\Projects\CalculadoraMultiDevice\Unit1.pas=C:\Users\jamis\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2018/12/25 16:18:21.828,D:\GitHub\Delphi\Projects\CalculadoraMultiDevice\prCalculadora.dproj=C:\Users\jamis\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
-    <Transaction>2018/12/25 16:19:49.168,D:\GitHub\Delphi\Projects\CalculadoraEmDelphi\Calculadora\UFormCalculadora.pas=</Transaction>
-    <Transaction>2018/12/25 16:19:49.286,D:\GitHub\Delphi\Projects\CalculadoraEmDelphi\Calculadora\UOperacoesMatematicas.pas=</Transaction>
+	<Transactions>
+    <Transaction>2018/12/25 16:14:27.000.968,=C:\Users\jamis\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/12/25 16:15:04.000.984,=D:\GitHub\Delphi\Projects\CalculadoraEmDelphi\Calculadora\UFormCalculadora.pas</Transaction>
+    <Transaction>2018/12/25 16:15:17.000.093,=D:\GitHub\Delphi\Projects\CalculadoraEmDelphi\Calculadora\UOperacoesMatematicas.pas</Transaction>
+    <Transaction>2018/12/25 16:18:00.000.472,C:\Users\jamis\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\GitHub\Delphi\Projects\CalculadoraMultiDevice\Unit1.pas</Transaction>
+    <Transaction>2018/12/25 16:18:00.000.472,C:\Users\jamis\Documents\Embarcadero\Studio\Projects\Unit1.fmx=D:\GitHub\Delphi\Projects\CalculadoraMultiDevice\Unit1.fmx</Transaction>
+    <Transaction>2018/12/25 16:18:21.000.828,C:\Users\jamis\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\GitHub\Delphi\Projects\CalculadoraMultiDevice\prCalculadora.dproj</Transaction>
+    <Transaction>2018/12/25 16:19:49.000.168,D:\GitHub\Delphi\Projects\CalculadoraEmDelphi\Calculadora\UFormCalculadora.pas=</Transaction>
+    <Transaction>2018/12/25 16:19:49.000.286,D:\GitHub\Delphi\Projects\CalculadoraEmDelphi\Calculadora\UOperacoesMatematicas.pas=</Transaction>
+    <Transaction>2018/12/25 17:06:56.588,D:\GitHub\Delphi\Projects\CalculadoraMultiDevice\Calculadora-MultiDevice\UFrCalculadora.pas=D:\GitHub\Delphi\Projects\CalculadoraMultiDevice\Calculadora-MultiDevice\Unit1.pas</Transaction>
+    <Transaction>2018/12/25 17:06:56.588,D:\GitHub\Delphi\Projects\CalculadoraMultiDevice\Calculadora-MultiDevice\UFrCalculadora.fmx=D:\GitHub\Delphi\Projects\CalculadoraMultiDevice\Calculadora-MultiDevice\Unit1.fmx</Transaction>
+    <Transaction>2018/12/25 17:07:38.108,=D:\GitHub\Delphi\Projects\CalculadoraMultiDevice\Calculadora-MultiDevice\Unit1.pas</Transaction>
+    <Transaction>2018/12/25 17:08:43.571,=D:\GitHub\Delphi\Projects\CalculadoraEmDelphi\Calculadora\UOperacoesMatematicas.pas</Transaction>
+    <Transaction>2018/12/25 17:09:33.124,=D:\GitHub\Delphi\Projects\CalculadoraMultiDevice\Calculadora-MultiDevice\Unit1.pas</Transaction>
+    <Transaction>2018/12/25 17:10:00.496,D:\GitHub\Delphi\Projects\CalculadoraMultiDevice\Calculadora-MultiDevice\UOperacoesMat.pas=D:\GitHub\Delphi\Projects\CalculadoraMultiDevice\Calculadora-MultiDevice\Unit1.pas</Transaction>
+    <Transaction>2018/12/25 17:16:03.277,D:\GitHub\Delphi\Projects\CalculadoraEmDelphi\Calculadora\UOperacoesMatematicas.pas=</Transaction>
   </Transactions>
-  <ActiveMobileDevice>   <NoProfile iOSSimulator="iPhone5"/>
-  </ActiveMobileDevice>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
 </BorlandProject>

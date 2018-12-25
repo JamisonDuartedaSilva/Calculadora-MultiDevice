@@ -1,0 +1,21 @@
+unit UOperacoesMat;
+
+interface
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Edit,
+  FMX.Controls.Presentation, FMX.StdCtrls;
+type
+  TOperacoesMat = class
+
+  public
+    bJaPossuiOperador: boolean;
+
+    procedure AcrescentarValores(Valor : double; const edresultado : TEdit);
+    procedure AcrecentarOperacoes(Operacao : string; const edresultado : TEdit);
+    procedure CalcularResultado(edresultado: TEdit);
+  end;
+
+implementation
+
+end.

@@ -1,0 +1,14 @@
+program prCalculadora;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  UFrCalculadora in 'UFrCalculadora.pas' {frCalculadora};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TfrCalculadora, frCalculadora);
+  Application.Run;
+end.

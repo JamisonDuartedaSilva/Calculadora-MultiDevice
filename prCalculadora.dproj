@@ -315,10 +315,11 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="Unit1.pas">
-            <Form>Form1</Form>
+        <DCCReference Include="UFrCalculadora.pas">
+            <Form>frCalculadora</Form>
             <FormType>fmx</FormType>
         </DCCReference>
+        <DCCReference Include="UOperacoesMat.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
