@@ -64,6 +64,10 @@ var
 implementation
 
 {$R *.fmx}
+{$R *.iPad.fmx IOS}
+{$R *.Macintosh.fmx MACOS}
+{$R *.LgXhdpiPh.fmx ANDROID}
+{$R *.iPhone4in.fmx IOS}
 
 procedure TfrCalculadora.bt0Click(Sender: TObject);
 begin

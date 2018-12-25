@@ -1,0 +1,182 @@
+unit UFrCalculadora;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Edit,
+  FMX.Controls.Presentation, FMX.StdCtrls, FMX.Styles, UOperacoesMat;
+
+type
+  TfrCalculadora = class(TForm)
+    bt1: TButton;
+    bt2: TButton;
+    bt3: TButton;
+    bt4: TButton;
+    bt5: TButton;
+    bt6: TButton;
+    bt7: TButton;
+    bt8: TButton;
+    bt9: TButton;
+    btVirgula: TButton;
+    bt0: TButton;
+    btLimpar: TButton;
+    btMais: TButton;
+    btMenos: TButton;
+    btMultiplicar: TButton;
+    btDividir: TButton;
+    btApagar: TButton;
+    btResultado: TButton;
+    btDark: TButton;
+    btlight: TButton;
+    edResultado: TEdit;
+    lbResultado: TLabel;
+    procedure FormCreate(Sender: TObject);
+    procedure FormDestroy(Sender: TObject);
+    procedure bt1Click(Sender: TObject);
+    procedure bt2Click(Sender: TObject);
+    procedure bt3Click(Sender: TObject);
+    procedure bt4Click(Sender: TObject);
+    procedure bt5Click(Sender: TObject);
+    procedure bt6Click(Sender: TObject);
+    procedure bt7Click(Sender: TObject);
+    procedure bt8Click(Sender: TObject);
+    procedure bt9Click(Sender: TObject);
+    procedure bt0Click(Sender: TObject);
+    procedure btApagarClick(Sender: TObject);
+    procedure btDividirClick(Sender: TObject);
+    procedure btLimparClick(Sender: TObject);
+    procedure btMultiplicarClick(Sender: TObject);
+    procedure btResultadoClick(Sender: TObject);
+    procedure btMaisClick(Sender: TObject);
+    procedure btMenosClick(Sender: TObject);
+    procedure btVirgulaClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frCalculadora: TfrCalculadora;
+  bJaPossuiOperador: boolean;
+  OperacoesMat : TOperacoesMat;
+implementation
+
+{$R *.fmx}
+
+procedure TfrCalculadora.bt0Click(Sender: TObject);
+begin
+  OperacoesMat.AcrescentarValores(0.0,edResultado);
+end;
+
+procedure TfrCalculadora.bt1Click(Sender: TObject);
+begin
+  OperacoesMat.AcrescentarValores(1.0,edResultado);
+end;
+
+procedure TfrCalculadora.bt2Click(Sender: TObject);
+begin
+  OperacoesMat.AcrescentarValores(2.0,edResultado);
+end;
+
+procedure TfrCalculadora.bt3Click(Sender: TObject);
+begin
+  OperacoesMat.AcrescentarValores(3.0,edResultado);
+end;
+
+procedure TfrCalculadora.bt4Click(Sender: TObject);
+begin
+  OperacoesMat.AcrescentarValores(4.0,edResultado);
+end;
+
+procedure TfrCalculadora.bt5Click(Sender: TObject);
+begin
+  OperacoesMat.AcrescentarValores(5.0,edResultado);
+end;
+
+procedure TfrCalculadora.bt6Click(Sender: TObject);
+begin
+  OperacoesMat.AcrescentarValores(6.0,edResultado);
+end;
+
+procedure TfrCalculadora.bt7Click(Sender: TObject);
+begin
+  OperacoesMat.AcrescentarValores(7.0,edResultado);
+end;
+
+procedure TfrCalculadora.bt8Click(Sender: TObject);
+begin
+  OperacoesMat.AcrescentarValores(8.0,edResultado);
+end;
+
+procedure TfrCalculadora.bt9Click(Sender: TObject);
+begin
+  OperacoesMat.AcrescentarValores(9.0,edResultado);
+end;
+
+procedure TfrCalculadora.btApagarClick(Sender: TObject);
+var
+  ValorEdit : string;
+begin
+  if edResultado.Text = EmptyStr then
+    Exit;
+
+
+  ValorEdit := edResultado.Text;
+
+  if (ValorEdit[Length(ValorEdit)] in ['-','/','*','+']) then
+    OperacoesMat.bJaPossuiOperador := false;
+
+  Delete(ValorEdit,Length(ValorEdit),1);
+  edResultado.Text := ValorEdit;
+
+end;
+
+procedure TfrCalculadora.btDividirClick(Sender: TObject);
+begin
+  OperacoesMat.AcrecentarOperacoes('/',edResultado);
+end;
+
+procedure TfrCalculadora.btLimparClick(Sender: TObject);
+begin
+  edResultado.Text := EmptyStr;
+  OperacoesMat.bJaPossuiOperador := false;
+end;
+
+procedure TfrCalculadora.btMaisClick(Sender: TObject);
+begin
+  OperacoesMat.AcrecentarOperacoes('+',edResultado);
+end;
+
+procedure TfrCalculadora.btMenosClick(Sender: TObject);
+begin
+  OperacoesMat.AcrecentarOperacoes('-',edResultado);
+end;
+
+procedure TfrCalculadora.btMultiplicarClick(Sender: TObject);
+begin
+  OperacoesMat.AcrecentarOperacoes('*',edResultado);
+end;
+
+procedure TfrCalculadora.btResultadoClick(Sender: TObject);
+begin
+  OperacoesMat.CalcularResultado(edResultado);
+end;
+
+procedure TfrCalculadora.btVirgulaClick(Sender: TObject);
+begin
+  edResultado.Text := edResultado.Text + ',';
+end;
+
+procedure TfrCalculadora.FormCreate(Sender: TObject);
+begin
+  OperacoesMat := TOperacoesMat.Create;
+end;
+
+procedure TfrCalculadora.FormDestroy(Sender: TObject);
+begin
+  OperacoesMat.Free;
+end;
+
+end.

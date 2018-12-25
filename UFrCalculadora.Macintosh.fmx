@@ -1,0 +1,9 @@
+inherited frCalculadora_Macintosh: TfrCalculadora_Macintosh
+  DesignerMasterStyle = 3
+  inherited edResultado: TEdit
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+  end
+  inherited lbResultado: TLabel
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+  end
+end

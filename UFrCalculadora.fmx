@@ -1,9 +1,11 @@
 object frCalculadora: TfrCalculadora
   Left = 0
   Top = 0
+  BorderStyle = Single
   Caption = 'Form1'
   ClientHeight = 418
   ClientWidth = 424
+  Position = DesktopCenter
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -277,7 +279,7 @@ object frCalculadora: TfrCalculadora
     Position.X = 16.000000000000000000
     Position.Y = 32.000000000000000000
     Size.Width = 393.000000000000000000
-    Size.Height = 46.000000000000000000
+    Size.Height = 49.000000000000000000
     Size.PlatformDefault = False
     StyledSettings = [FontColor]
   end

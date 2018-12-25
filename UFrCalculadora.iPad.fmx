@@ -1,0 +1,12 @@
+inherited frCalculadora_iPad: TfrCalculadora_iPad
+  ClientHeight = 1004
+  ClientWidth = 768
+  DesignerMasterStyle = 3
+  inherited edResultado: TEdit
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Size.Height = 30.000000000000000000
+  end
+  inherited lbResultado: TLabel
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+  end
+end
