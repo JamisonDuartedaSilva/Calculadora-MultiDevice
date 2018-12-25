@@ -7,6 +7,8 @@ object frCalculadora: TfrCalculadora
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
   DesignerMasterStyle = 0
   object bt1: TButton
     StyledSettings = [FontColor]
@@ -19,6 +21,7 @@ object frCalculadora: TfrCalculadora
     Text = '1'
     TextSettings.Font.Family = 'Adobe Devanagari'
     TextSettings.Font.Size = 30.000000000000000000
+    OnClick = bt1Click
   end
   object bt2: TButton
     StyledSettings = [FontColor]
@@ -31,6 +34,7 @@ object frCalculadora: TfrCalculadora
     Text = '2'
     TextSettings.Font.Family = 'Adobe Devanagari'
     TextSettings.Font.Size = 30.000000000000000000
+    OnClick = bt2Click
   end
   object bt3: TButton
     StyledSettings = [FontColor]
@@ -43,6 +47,7 @@ object frCalculadora: TfrCalculadora
     Text = '3'
     TextSettings.Font.Family = 'Adobe Devanagari'
     TextSettings.Font.Size = 30.000000000000000000
+    OnClick = bt3Click
   end
   object bt4: TButton
     StyledSettings = [FontColor]
@@ -55,6 +60,7 @@ object frCalculadora: TfrCalculadora
     Text = '4'
     TextSettings.Font.Family = 'Adobe Devanagari'
     TextSettings.Font.Size = 30.000000000000000000
+    OnClick = bt4Click
   end
   object bt5: TButton
     StyledSettings = [FontColor]
@@ -67,6 +73,7 @@ object frCalculadora: TfrCalculadora
     Text = '5'
     TextSettings.Font.Family = 'Adobe Devanagari'
     TextSettings.Font.Size = 30.000000000000000000
+    OnClick = bt5Click
   end
   object bt6: TButton
     StyledSettings = [FontColor]
@@ -79,6 +86,7 @@ object frCalculadora: TfrCalculadora
     Text = '6'
     TextSettings.Font.Family = 'Adobe Devanagari'
     TextSettings.Font.Size = 30.000000000000000000
+    OnClick = bt6Click
   end
   object bt7: TButton
     StyledSettings = [FontColor]
@@ -91,6 +99,7 @@ object frCalculadora: TfrCalculadora
     Text = '7'
     TextSettings.Font.Family = 'Adobe Devanagari'
     TextSettings.Font.Size = 30.000000000000000000
+    OnClick = bt7Click
   end
   object bt8: TButton
     StyledSettings = [FontColor]
@@ -103,6 +112,7 @@ object frCalculadora: TfrCalculadora
     Text = '8'
     TextSettings.Font.Family = 'Adobe Devanagari'
     TextSettings.Font.Size = 30.000000000000000000
+    OnClick = bt8Click
   end
   object bt9: TButton
     StyledSettings = [FontColor]
@@ -115,6 +125,7 @@ object frCalculadora: TfrCalculadora
     Text = '9'
     TextSettings.Font.Family = 'Adobe Devanagari'
     TextSettings.Font.Size = 30.000000000000000000
+    OnClick = bt9Click
   end
   object btVirgula: TButton
     StyledSettings = [FontColor]
@@ -127,6 +138,7 @@ object frCalculadora: TfrCalculadora
     Text = ','
     TextSettings.Font.Family = 'Adobe Devanagari'
     TextSettings.Font.Size = 30.000000000000000000
+    OnClick = btVirgulaClick
   end
   object bt0: TButton
     StyledSettings = [FontColor]
@@ -139,6 +151,7 @@ object frCalculadora: TfrCalculadora
     Text = '0'
     TextSettings.Font.Family = 'Adobe Devanagari'
     TextSettings.Font.Size = 30.000000000000000000
+    OnClick = bt0Click
   end
   object btLimpar: TButton
     StyledSettings = [Style, FontColor]
@@ -151,6 +164,7 @@ object frCalculadora: TfrCalculadora
     Text = 'LIMPAR'
     TextSettings.Font.Family = 'Adobe Devanagari'
     TextSettings.Font.Size = 20.000000000000000000
+    OnClick = btLimparClick
   end
   object btMais: TButton
     StyledSettings = [FontColor]
@@ -163,6 +177,7 @@ object frCalculadora: TfrCalculadora
     Text = '+'
     TextSettings.Font.Family = 'Adobe Devanagari'
     TextSettings.Font.Size = 30.000000000000000000
+    OnClick = btMaisClick
   end
   object btMenos: TButton
     StyledSettings = [FontColor]
@@ -175,6 +190,7 @@ object frCalculadora: TfrCalculadora
     Text = '-'
     TextSettings.Font.Family = 'Adobe Devanagari'
     TextSettings.Font.Size = 30.000000000000000000
+    OnClick = btMenosClick
   end
   object btMultiplicar: TButton
     StyledSettings = [FontColor]
@@ -187,6 +203,7 @@ object frCalculadora: TfrCalculadora
     Text = '*'
     TextSettings.Font.Family = 'Adobe Devanagari'
     TextSettings.Font.Size = 30.000000000000000000
+    OnClick = btMultiplicarClick
   end
   object btDividir: TButton
     StyledSettings = [FontColor]
@@ -199,6 +216,7 @@ object frCalculadora: TfrCalculadora
     Text = '/'
     TextSettings.Font.Family = 'Adobe Devanagari'
     TextSettings.Font.Size = 30.000000000000000000
+    OnClick = btDividirClick
   end
   object btApagar: TButton
     StyledSettings = [FontColor]
@@ -211,6 +229,7 @@ object frCalculadora: TfrCalculadora
     Text = '<='
     TextSettings.Font.Family = 'Adobe Devanagari'
     TextSettings.Font.Size = 30.000000000000000000
+    OnClick = btApagarClick
   end
   object btResultado: TButton
     StyledSettings = [FontColor]
@@ -223,6 +242,7 @@ object frCalculadora: TfrCalculadora
     Text = '='
     TextSettings.Font.Family = 'Adobe Devanagari'
     TextSettings.Font.Size = 30.000000000000000000
+    OnClick = btResultadoClick
   end
   object btDark: TButton
     StyledSettings = [Style, FontColor]
@@ -268,6 +288,6 @@ object frCalculadora: TfrCalculadora
     TextSettings.Font.Size = 15.000000000000000000
     TextSettings.Font.StyleExt = {00070000000000000004000000}
     Text = 'RESULTADO'
-    TabOrder = 22
+    TabOrder = 21
   end
 end

@@ -1,0 +1,17 @@
+program prCalculadora;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  UFrCalculadora in 'UFrCalculadora.pas' {frCalculadora},
+  UOperacoesMat in 'UOperacoesMat.pas',
+  UFormCalculadora in '..\..\CalculadoraEmDelphi\Calculadora\UFormCalculadora.pas' {FormCalculadora};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TfrCalculadora, frCalculadora);
+  Application.CreateForm(TFormCalculadora, FormCalculadora);
+  Application.Run;
+end.

@@ -1,0 +1,287 @@
+object frCalculadora: TfrCalculadora
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 418
+  ClientWidth = 424
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object bt1: TButton
+    StyledSettings = [FontColor]
+    Position.X = 16.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 19
+    Text = '1'
+    TextSettings.Font.Family = 'Adobe Devanagari'
+    TextSettings.Font.Size = 30.000000000000000000
+    OnClick = bt1Click
+  end
+  object bt2: TButton
+    StyledSettings = [FontColor]
+    Position.X = 96.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 18
+    Text = '2'
+    TextSettings.Font.Family = 'Adobe Devanagari'
+    TextSettings.Font.Size = 30.000000000000000000
+    OnClick = bt2Click
+  end
+  object bt3: TButton
+    StyledSettings = [FontColor]
+    Position.X = 176.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 17
+    Text = '3'
+    TextSettings.Font.Family = 'Adobe Devanagari'
+    TextSettings.Font.Size = 30.000000000000000000
+    OnClick = bt3Click
+  end
+  object bt4: TButton
+    StyledSettings = [FontColor]
+    Position.X = 16.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    Text = '4'
+    TextSettings.Font.Family = 'Adobe Devanagari'
+    TextSettings.Font.Size = 30.000000000000000000
+    OnClick = bt4Click
+  end
+  object bt5: TButton
+    StyledSettings = [FontColor]
+    Position.X = 96.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Text = '5'
+    TextSettings.Font.Family = 'Adobe Devanagari'
+    TextSettings.Font.Size = 30.000000000000000000
+    OnClick = bt5Click
+  end
+  object bt6: TButton
+    StyledSettings = [FontColor]
+    Position.X = 176.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = '6'
+    TextSettings.Font.Family = 'Adobe Devanagari'
+    TextSettings.Font.Size = 30.000000000000000000
+    OnClick = bt6Click
+  end
+  object bt7: TButton
+    StyledSettings = [FontColor]
+    Position.X = 16.000000000000000000
+    Position.Y = 248.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = '7'
+    TextSettings.Font.Family = 'Adobe Devanagari'
+    TextSettings.Font.Size = 30.000000000000000000
+    OnClick = bt7Click
+  end
+  object bt8: TButton
+    StyledSettings = [FontColor]
+    Position.X = 96.000000000000000000
+    Position.Y = 248.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = '8'
+    TextSettings.Font.Family = 'Adobe Devanagari'
+    TextSettings.Font.Size = 30.000000000000000000
+    OnClick = bt8Click
+  end
+  object bt9: TButton
+    StyledSettings = [FontColor]
+    Position.X = 176.000000000000000000
+    Position.Y = 248.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = '9'
+    TextSettings.Font.Family = 'Adobe Devanagari'
+    TextSettings.Font.Size = 30.000000000000000000
+    OnClick = bt9Click
+  end
+  object btVirgula: TButton
+    StyledSettings = [FontColor]
+    Position.X = 16.000000000000000000
+    Position.Y = 328.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = ','
+    TextSettings.Font.Family = 'Adobe Devanagari'
+    TextSettings.Font.Size = 30.000000000000000000
+  end
+  object bt0: TButton
+    StyledSettings = [FontColor]
+    Position.X = 96.000000000000000000
+    Position.Y = 328.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = '0'
+    TextSettings.Font.Family = 'Adobe Devanagari'
+    TextSettings.Font.Size = 30.000000000000000000
+    OnClick = bt0Click
+  end
+  object btLimpar: TButton
+    StyledSettings = [Style, FontColor]
+    Position.X = 176.000000000000000000
+    Position.Y = 328.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'LIMPAR'
+    TextSettings.Font.Family = 'Adobe Devanagari'
+    TextSettings.Font.Size = 20.000000000000000000
+  end
+  object btMais: TButton
+    StyledSettings = [FontColor]
+    Position.X = 256.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 16
+    Text = '+'
+    TextSettings.Font.Family = 'Adobe Devanagari'
+    TextSettings.Font.Size = 30.000000000000000000
+  end
+  object btMenos: TButton
+    StyledSettings = [FontColor]
+    Position.X = 256.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 14
+    Text = '-'
+    TextSettings.Font.Family = 'Adobe Devanagari'
+    TextSettings.Font.Size = 30.000000000000000000
+  end
+  object btMultiplicar: TButton
+    StyledSettings = [FontColor]
+    Position.X = 256.000000000000000000
+    Position.Y = 248.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+    Text = '*'
+    TextSettings.Font.Family = 'Adobe Devanagari'
+    TextSettings.Font.Size = 30.000000000000000000
+  end
+  object btDividir: TButton
+    StyledSettings = [FontColor]
+    Position.X = 256.000000000000000000
+    Position.Y = 328.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    Text = '/'
+    TextSettings.Font.Family = 'Adobe Devanagari'
+    TextSettings.Font.Size = 30.000000000000000000
+    OnClick = btDividirClick
+  end
+  object btApagar: TButton
+    StyledSettings = [FontColor]
+    Position.X = 336.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 15
+    Text = '<='
+    TextSettings.Font.Family = 'Adobe Devanagari'
+    TextSettings.Font.Size = 30.000000000000000000
+    OnClick = btApagarClick
+  end
+  object btResultado: TButton
+    StyledSettings = [FontColor]
+    Position.X = 336.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 13
+    Text = '='
+    TextSettings.Font.Family = 'Adobe Devanagari'
+    TextSettings.Font.Size = 30.000000000000000000
+  end
+  object btDark: TButton
+    StyledSettings = [Style, FontColor]
+    Position.X = 336.000000000000000000
+    Position.Y = 248.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+    Text = 'DARK'
+    TextSettings.Font.Family = 'Adobe Devanagari'
+    TextSettings.Font.Size = 20.000000000000000000
+  end
+  object btlight: TButton
+    StyledSettings = [Style, FontColor]
+    Position.X = 336.000000000000000000
+    Position.Y = 328.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    Text = 'LIGHT'
+    TextSettings.Font.Family = 'Adobe Devanagari'
+    TextSettings.Font.Size = 20.000000000000000000
+  end
+  object edResultado: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 20
+    TextSettings.Font.Family = 'Franklin Gothic'
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Position.X = 16.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 393.000000000000000000
+    Size.Height = 46.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [FontColor]
+  end
+  object lbResultado: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.X = 16.000000000000000000
+    Position.Y = 8.000000000000000000
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'RESULTADO'
+    TabOrder = 21
+  end
+end
